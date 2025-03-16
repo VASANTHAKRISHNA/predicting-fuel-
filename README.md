@@ -1,4 +1,3 @@
-# prompt: generate a python code for streamlit on predicting fuel efficiency of a vehicle using attributes like fuel type, kerb weight, engine displacement, torque, horse power, vehicle speed using machine lear
 
 import streamlit as st
 import pandas as pd
