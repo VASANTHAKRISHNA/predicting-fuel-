@@ -16,7 +16,8 @@ data = load_data()
 
 # Preprocess data
 label_encoder = LabelEncoder()
-data['Fuel Type'] = label_encoder.fit_transform(data['Fuel Type'])
+if 'Fuel Type' in data.columns:
+    data['Fuel Type'] = label_encoder.fit_transform(data['Fuel Type'])
 
 X = data[['Fuel Type', 'Kerb Weight', 'Engine Displacement', 'Torque', 'Horse Power', 'Vehicle Speed']]
 y = data['Fuel Efficiency']
